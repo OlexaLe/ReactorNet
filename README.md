@@ -26,7 +26,7 @@ public struct IncreaseValue : IReactorMutation<CounterState>
 ```
 
 ### Create Reactor
-Reactor should inherit from ```Reactor<T>``` abstract class. Trigger(s) registration should be places here, like:
+Reactor should inherit from ```Reactor<T>``` abstract class. Trigger(s) registration should be placed here, like:
 ```csharp
 public class CounterReactor : Reactor<CounterState>
 {
