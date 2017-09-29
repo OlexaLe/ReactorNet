@@ -1,5 +1,5 @@
 # ReactorNet
-ReactorNet is a framework for a reactive and unidirection domain layer for your app. This repository introduces the basic concept of Reactor and contains a sample reactor with example of use via unit tests.
+ReactorNet is a framework for a reactive and unidirection domain layer for your app. This repository introduces the basic concept of Reactor and contains a sample reactor with an example of use via unit tests.
 
 ## Goals
 * **Be Small**: ReactorNet doesn't require the whole application to follow a single architecture. Use it only when you need it.
@@ -7,7 +7,7 @@ ReactorNet is a framework for a reactive and unidirection domain layer for your 
 
 ## Use manual
 #### Create Store
-Store is a POCO. It might be class or even something as simple as string.
+Store is a POCO. It might be a class or even something as simple as a string.
 
 #### Create Trigger(s)
 Trigger is a class or a struct that conforms to ```IReactorTrigger``` interface, like: 
@@ -46,4 +46,4 @@ reactor.Dispatch(new Increase());
 ```
 
 ### Side-effects?
-Whant to add logging? Or observe any States update? Just observe State change cause Reactor supports INotifyPropertyChanges.
+Want to add logging? Or observe any States update? Just observe State change cause Reactor supports INotifyPropertyChanges.
